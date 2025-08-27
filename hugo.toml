@@ -1,0 +1,5 @@
+baseURL = "https://hahakevin45.github.io/"
+languageCode = "zh-tw"
+title = "2061 筆記漫遊計畫"
+theme = "PaperMod"
+contentDir = "../NoteSystem/Public"
