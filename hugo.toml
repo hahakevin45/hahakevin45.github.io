@@ -1,5 +1,53 @@
 baseURL = "https://hahakevin45.github.io/"
 languageCode = "zh-tw"
-title = "2061 筆記漫遊計畫"
+title = "blog"
 theme = "PaperMod"
-contentDir = "../NoteSystem/Public"
+contentDir = "content"
+
+# 啟用搜尋功能所需的設定
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# --- 主要參數設定 ---
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  enableCodeCopy = true
+
+# --- 主頁歡迎詞 (官方推薦作法) ---
+# 這會啟用 Home-Info 模式，並在主頁頂部顯示標題和內容
+[params.homeInfoParams]
+  Title = "Hello World👋"
+  Content = "這裡是我的筆記與文章網站，紀錄學習、思考與計畫。"
+
+# --- 主頁頂部的社交媒體圖示 ---
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/hahakevin45"
+
+[[params.socialIcons]]
+  name = "instagram"
+  url = "https://www.instagram.com/kevin_945_ok/"
+
+# --- 頂部導覽列 ---
+[[menu.main]]
+  identifier = "archives"
+  name = "檔案"
+  url = "/archives/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜尋"
+  url = "/search/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "tags"
+  name = "標籤"
+  url = "/tags/"
+  weight = 30
+
+[markup.goldmark.renderer]
+  unsafe = true
