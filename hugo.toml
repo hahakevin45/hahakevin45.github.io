@@ -1,6 +1,6 @@
 baseURL = "https://hahakevin45.github.io/"
 languageCode = "zh-tw"
-title = "blog"
+title = "Su Yen Wen blog"
 theme = "PaperMod"
 contentDir = "content"
 

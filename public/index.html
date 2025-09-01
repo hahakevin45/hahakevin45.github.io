@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>blog</title>
+<title>Su Yen Wen blog</title>
 
 <meta name="description" content="">
 <meta name="author" content="">
@@ -76,7 +76,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="blog (Alt + H)">blog</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Su Yen Wen blog (Alt + H)">Su Yen Wen blog</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -154,19 +154,42 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">2061:Note Odyssey
+    <h2 class="entry-hint-parent">Hugo &#43; GitHub Pages &#43; 自動部署
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>先備知識:
+git GitHub Hugo 安裝 使用 scoop 下載 huge
+scoop install hugo 創建 hugo site
+hugo new site my-notes cd my-notes # 進入my-note 資料夾 PaperMod 主題安裝 這是我選用的主題，如果要用不同的主題也是可以
+從git 下載 PaperMod 主題
+git init git submodule add https://github.com/adityatelange/hugo-PaperMod themes/PaperMod Huge 測試 新增測試用文章至my-notes/posts/，這是不能省略的一步。
+hugo new posts/first-post.md 開啟本地預覽，這會在網址 (http://localhost:1313/) 產生網站。
+hugo server -D GitHub 自動部署 接下來要部署到 GitHub Pages
+首先在 GitHub 建一個新 repo，名字就叫 USERNAME.github.io。
+接下來要在 repo 的設定當中注意
+Setting/Action/General/Workflow permissions 需要選 Read and write permissions Setting/Environments/github-pages Deployment branches and tags 應該要是空白的 Setting/Pages/Build and Deployment Source 需要選 Github Action 接下來找到 hugo.toml 進行設置，這是 hugo 主要進行設置的地方，我加入了檔案、收尋、標籤功能，還有最上面的介紹和社交軟體連結，這邊都能按照官網進行客製化。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-08-29 15:45:00 +0800 CST'>August 29, 2025</span>&nbsp;·&nbsp;2 min</footer>
+  <a class="entry-link" aria-label="post link to Hugo &#43; GitHub Pages &#43; 自動部署" href="http://localhost:1313/posts/hugo_%E5%AE%89%E8%A3%9D/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">長期筆記系統選擇指南：我的 2061 筆記計畫
     </h2>
   </header>
   <div class="entry-content">
     <p>我正在尋找一個能陪我 36 年的筆記系統</p>
   </div>
   <footer class="entry-footer"><span title='2025-08-27 15:45:00 +0800 CST'>August 27, 2025</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to 2061:Note Odyssey" href="http://localhost:1313/posts/2061_%E7%AD%86%E8%A8%98%E6%BC%AB%E9%81%8A/"></a>
+  <a class="entry-link" aria-label="post link to 長期筆記系統選擇指南：我的 2061 筆記計畫" href="http://localhost:1313/posts/2061_%E7%AD%86%E8%A8%98%E6%BC%AB%E9%81%8A/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">blog</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Su Yen Wen blog</a></span> · 
 
     <span>
         Powered by
