@@ -2,6 +2,10 @@
 id: LazyVim_設置
 aliases: []
 tags: []
+draft: false
+title: "LazyVim 安裝與設置"
+date: 2025-09-18T15:45:00+08:00
+summary: "LazyVim 安裝簡易教學"
 ---
 
 # 前言

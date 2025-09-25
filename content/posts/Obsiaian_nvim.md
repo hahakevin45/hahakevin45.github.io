@@ -2,8 +2,8 @@
 id: Obsiaian.nvim 設置
 aliases: []
 title: "Obsidian.nvim 設置教學"
-tags:
-  - 待發表
+date: 2025-09-18T16:45:00+08:00
+summary: "Obsidian.nvim 設置教學"
 ---
 
 # Obsidian.nvim 介紹
