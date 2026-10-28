@@ -1,0 +1,11 @@
+/* 首頁 ASCII 標題：依螢幕寬度縮放字級，避免手機上溢出 */
+.home-info .ascii-title {
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: var(--primary);
+    font-size: min(1.25vw, 11px);
+    line-height: 1.2;
+    font-weight: 400;
+    overflow-x: auto;
+}
