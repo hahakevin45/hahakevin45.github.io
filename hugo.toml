@@ -18,7 +18,9 @@ contentDir = "content"
 # --- 主頁歡迎詞 (官方推薦作法) ---
 # 這會啟用 Home-Info 模式，並在主頁頂部顯示標題和內容
 [params.homeInfoParams]
-  Title = "
+  # 用 ''' 多行字面字串，才能換行並包含 " 字元；<pre> 讓 ASCII 字保持對齊
+  Title = '''
+<pre class="ascii-title" role="img" aria-label="Hello World">
                          ,,    ,,                                                           ,,         ,,
 `7MMF'  `7MMF'         `7MM  `7MM                `7MMF'     A     `7MF'                   `7MM       `7MM
   MM      MM             MM    MM                  `MA     ,MA     ,V                       MM         MM
@@ -27,7 +29,8 @@ contentDir = "content"
   MM      MM  8M""""""   MM    MM  8M     M8         `MM A'  `MM A'    8M     M8   MM       MM  8MI    MM
   MM      MM  YM.    ,   MM    MM  YA.   ,A9          :MM;    :MM;     YA.   ,A9   MM       MM  `Mb    MM
 .JMML.  .JMML. `Mbmmd' .JMML..JMML. `Ybmd9'            VF      VF       `Ybmd9'  .JMML.   .JMML. `Wbmd"MML.
-"
+</pre>
+'''
   Content = "在島上出生，在高雄生活，在海邊念書，在山上遨遊。"
 
 # --- 主頁頂部的社交媒體圖示 ---

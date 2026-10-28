@@ -1,12 +1,12 @@
 ---
 id: neovim_latex_pdf
 aliases: []
-title: Sumtra PDF 轉跳設定
+title: Sumatra PDF 轉跳設定
 date: 2025-09-01T15:45:00+08:00
 draft: false
 tags:
   - LaTex
-  - Sumtra
+  - Sumatra
   - Neovim
 ---
 

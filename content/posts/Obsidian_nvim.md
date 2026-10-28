@@ -1,6 +1,6 @@
 ---
-id: Obsiaian.nvim 設置
-aliases: []
+id: Obsidian.nvim 設置
+aliases: ["/posts/obsiaian_nvim/"]
 title: "Obsidian.nvim 設置教學"
 date: 2025-09-18T16:45:00+08:00
 summary: "Obsidian.nvim 設置教學"
@@ -8,7 +8,7 @@ summary: "Obsidian.nvim 設置教學"
 
 # Obsidian.nvim 介紹
 
-Obsidain.nvim 是一個 Neovim 的插件，主要的功能是讓Neovim 擁有類似 Obsidian 的功能，在實際體驗當中，可以作為 Neovim 和 Obsidian 的橋樑。
+Obsidian.nvim 是一個 Neovim 的插件，主要的功能是讓Neovim 擁有類似 Obsidian 的功能，在實際體驗當中，可以作為 Neovim 和 Obsidian 的橋樑。
 
 ## Obsidian.nvim 安裝說明
 
