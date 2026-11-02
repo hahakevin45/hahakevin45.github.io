@@ -14,6 +14,7 @@ contentDir = "content"
   ShowReadingTime = true
   ShowPostNavLinks = true
   enableCodeCopy = true
+  ShowToc = true          # 文章目錄；寬螢幕時固定在左側（見 custom.css、extend_footer.html）
 
 # --- 主頁歡迎詞 (官方推薦作法) ---
 # 這會啟用 Home-Info 模式，並在主頁頂部顯示標題和內容

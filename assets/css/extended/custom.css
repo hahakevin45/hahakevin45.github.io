@@ -9,3 +9,81 @@
     font-weight: 400;
     overflow-x: auto;
 }
+
+/* 文章目錄：寬螢幕時固定在內文左側，標示目前閱讀的章節（知乎風格） */
+.toc a.active {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+@media (min-width: 1300px) {
+    .toc {
+        position: fixed;
+        top: 120px;
+        left: calc(50% - var(--main-width) / 2 - var(--gap) - 240px);
+        width: 220px;
+        max-height: calc(100vh - 160px);
+        overflow-y: auto;
+        margin: 0;
+        border: none;
+        background: none;
+        font-size: 14px;
+    }
+
+    .dark .toc {
+        background: none;
+    }
+
+    .toc details summary {
+        cursor: default;
+        pointer-events: none;
+        margin-inline-start: 0;
+        color: var(--secondary);
+        list-style: none;
+    }
+
+    .toc details summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .toc .inner {
+        margin: 10px 0 0;
+        padding: 0;
+        opacity: 1;
+    }
+
+    .toc ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .toc li ul {
+        margin-inline-start: 0;
+    }
+
+    .toc li ul a {
+        padding-left: 24px;
+    }
+
+    .toc li ul ul a {
+        padding-left: 36px;
+    }
+
+    .toc a {
+        display: block;
+        padding: 4px 0 4px 12px;
+        border-left: 2px solid var(--border);
+        color: var(--secondary);
+        line-height: 1.5;
+    }
+
+    .toc a:hover {
+        box-shadow: none;
+        color: var(--primary);
+    }
+
+    .toc a.active {
+        border-left-color: var(--primary);
+    }
+}
