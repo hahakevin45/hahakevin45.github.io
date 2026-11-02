@@ -16,11 +16,12 @@
     font-weight: 600;
 }
 
-@media (min-width: 1300px) {
+/* 目錄寬 220px，與內文保留 80px 間距；斷點 = 內文 720 + 兩側 (80 + 220 + 24 邊距)，取整 */
+@media (min-width: 1380px) {
     .toc {
         position: fixed;
         top: 120px;
-        left: calc(50% - var(--main-width) / 2 - var(--gap) - 240px);
+        left: calc(50% - var(--main-width) / 2 - 80px - 220px);
         width: 220px;
         max-height: calc(100vh - 160px);
         overflow-y: auto;
