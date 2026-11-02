@@ -1,0 +1,49 @@
+{{- /* 文章目錄：寬螢幕自動展開，並隨捲動標示目前章節 */ -}}
+{{- if and .IsPage (.Param "ShowToc") }}
+<script>
+(function () {
+    var toc = document.querySelector('.toc');
+    if (!toc) return;
+    var links = Array.prototype.slice.call(toc.querySelectorAll('a[href^="#"]'));
+    var headings = links.map(function (a) {
+        return document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
+    });
+
+    var wide = window.matchMedia('(min-width: 1300px)');
+    function syncOpen() {
+        if (wide.matches) toc.querySelector('details').open = true;
+    }
+    syncOpen();
+    wide.addEventListener('change', syncOpen);
+
+    var current = null;
+    function update() {
+        // 標題進入視窗上方 30% 就算讀到該章節；還沒讀到任何標題時標示第一個
+        var line = window.innerHeight * 0.3;
+        var index = 0;
+        for (var i = 0; i < headings.length; i++) {
+            if (headings[i] && headings[i].getBoundingClientRect().top <= line) index = i;
+        }
+        var active = links[index] || null;
+        if (active === current) return;
+        if (current) current.classList.remove('active');
+        if (active) {
+            active.classList.add('active');
+            if (wide.matches) {
+                var top = active.offsetTop - toc.clientHeight / 2;
+                toc.scrollTo({ top: top });
+            }
+        }
+        current = active;
+    }
+
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(function () { ticking = false; update(); });
+    }, { passive: true });
+    update();
+})();
+</script>
+{{- end }}
